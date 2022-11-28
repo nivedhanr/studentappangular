@@ -11,7 +11,7 @@
 
                     <label for="" class="form-label">Name</label>
 
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
 
                 </div>
 
@@ -19,13 +19,13 @@
 
                     <label class="form-label">Roll NO</label>
 
-                    <input type="text" class="form-control">
+                    <input name="roll" [(ngModel)]="roll" type="text" class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
 
                     <label class="form-label">Admission Number</label>
-                    <input type="text" class="form-control">
+                    <input name="adnum" [(ngModel)]="adnum" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
 
@@ -33,7 +33,7 @@
 
 
 
-                    <input type="text" class="form-control">
+                    <input name="phnno" [(ngModel)]="phnno" type="text" class="form-control">
 
 
 
@@ -45,7 +45,7 @@
 
 
 
-                    <input type="text" class="form-control">
+                    <input name="clg" [(ngModel)]="clg" type="text" class="form-control">
 
 
 
@@ -57,7 +57,7 @@
 
 
 
-                    <input type="text" class="form-control">
+                    <input name="pname" [(ngModel)]="pname" type="text" class="form-control">
 
 
 
@@ -69,7 +69,7 @@
 
 
 
-                    <input type="text" class="form-control">
+                    <input name="pmobile" [(ngModel)]="pmobile" type="text" class="form-control">
 
 
 
@@ -80,7 +80,7 @@
 
 
 
-                    <input type="text" class="form-control">
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
 
 
 
@@ -92,7 +92,7 @@
 
 
 
-                    <input type="text" class="form-control">
+                    <input name="pass" [(ngModel)]="pass" type="text" class="form-control">
 
 
 
@@ -102,7 +102,7 @@
 
                    
 
-                    <button class="btn btn-success">submit</button>
+                    <button (click)="readValues()" class="btn btn-success">submit</button>
 
 
 
